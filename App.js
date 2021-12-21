@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { StyleSheet, View, Alert } from 'react-native'
+import { 
+  StyleSheet, 
+  View, 
+  Alert 
+} from 'react-native'
+
 import Constants from 'expo-constants'
 import { StatusBar } from 'expo-status-bar'
 import TopBar from './src/components/TopBar'
@@ -7,6 +12,7 @@ import BottomBar from './src/components/ButtomBar'
 import Swipes from './src/components/Swipes'
 
 function App() {
+  
   const [users, setUsers] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const swipesRef = useRef(null)
